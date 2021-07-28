@@ -15,6 +15,8 @@ function Movies() {
 
   const [sort, setSort] = useState("popularity.desc");
 
+  const imgUrl = themoviedb.common.images_uri;
+
   const starClick = (id) => {
     let stars = localStorage.getItem("stars");
 
@@ -45,7 +47,6 @@ function Movies() {
   };
 
   const getMovies = (page = 1, sort_by = sort) => {
-    console.log(sort_by);
     themoviedb.discover.getMovies(
       { page, sort_by },
       (data) => {
@@ -92,8 +93,6 @@ function Movies() {
       }
     );
   };
-
-  const imgUrl = themoviedb.common.images_uri;
 
   useEffect(() => {
     getMovies();

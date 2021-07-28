@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Table from "@material-ui/core/Table";
@@ -8,11 +8,6 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
-import { fade } from "@material-ui/core/styles/colorManipulator";
-import green from "@material-ui/core/colors/green";
-import orange from "@material-ui/core/colors/orange";
-import cyan from "@material-ui/core/colors/cyan";
-import red from "@material-ui/core/colors/red";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
