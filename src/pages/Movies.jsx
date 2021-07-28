@@ -153,7 +153,10 @@ function Movies() {
   return (
     <div>
       <Typography variant="h6" color="primary" noWrap>
-        TMDB 500 <small>(Sorts by Popularity)</small>
+        TMDB 500{" "}
+        <small>
+          <i>(Sorts by Popularity)</i>
+        </small>
       </Typography>
       {rows && rows.length ? (
         <AppTable
