@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+React app for movies db list
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
